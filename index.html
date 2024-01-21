@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- =====BOX ICONS===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title id="title_favicon">&lt;/Luiz&lt;</title>
 </head>
 
@@ -15,16 +17,14 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Luiz Otávio </a>
+                <a href="#" class="nav__logo"><em>&lt;/L0&gt;</em></a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Projects</a></li>
                 </ul>
             </div>
 
@@ -38,18 +38,34 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Marlon</span><br>Web Designer</h1>
-
-                <a href="#" class="button">Contact</a>
+                <h1 class="home__title">Hey there!<br>I'm <span class="home__title-color">Luiz Otávio,</span><br>
+                    <span class="subtitle__text">Software Engineer.</span>
+                </h1>
             </div>
 
             <div class="home__social">
-                <a href="https://www.linkedin.com/in/luiz-otavio-bab9691b1/" target="_blank"
+                <button onclick="window.open('https://www.linkedin.com/in/luiz-otavio-bab9691b1/', '_blank')"
+                    class="home__social-icon ">
+                    <i class="fa-brands fa-linkedin mr-2">
+                    </i>Linkedin
+                </button>
+
+                <button onclick="window.open('https://github.com/tavinhoo', '_blank')" class="home__social-icon">
+                    <i class="fa-brands fa-github mr-2">
+                    </i>Github
+                </button>
+
+                <button onclick="window.open('https://www.linkedin.com/in/luiz-otavio-bab9691b1/', '_blank')"
+                    class=" home__social-icon icon-pulse">
+                    <i class="fa-solid fa-file-pdf mr-2"></i>
+                    </i>Currículo
+                </button>
+                <!-- <a href="https://www.linkedin.com/in/luiz-otavio-bab9691b1/" target="_blank"
                     class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/tavinhoo" target="_blank" class="home__social-icon"><i
                         class='bx bxl-github'></i></a>
                 <a href="https://www.instagram.com/tavio_faria/" target="_blank" class="home__social-icon"><i
-                        class='bx bxl-instagram'></i></a>
+                        class='bx bxl-instagram'></i></a> -->
             </div>
 
             <div class="home__img">
@@ -62,7 +78,7 @@
                     <g mask="url(#mask0)">
                         <path
                             d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        <image class="home__blob-img" x="50" y="60" href="perfil.png" />
+                        <image class="home__blob-img" x="50" y="100" href="/assets/draw.svg" />
                     </g>
                 </svg>
             </div>
@@ -70,25 +86,48 @@
 
         <!--===== ABOUT =====-->
         <section class="about section " id="about">
-            <h2 class="section-title">About</h2>
-
+            <h2 class="section-title about__text">About me</h2>
             <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="about.jpg" alt="">
-                </div>
-
                 <div>
-                    <h2 class="about__subtitle">I'm Marlon</h2>
+                    <h2 class="about__subtitle">I'm Luiz</h2>
                     <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum
                         expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo
-                        recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
+                        recusandae cumque perferendis! Recusandae alias accusamus atque.
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+                <div class="about__img">
+                    <svg class="about__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 2. Forma e Transformação -->
+                        <path fill="#EFF6EE"
+                            d="M40.9,-50.5C53.6,-38.2,64.8,-25.8,69,-10.9C73.2,4.1,70.4,21.5,62,35.7C53.7,50,40,61,24.4,66.2C8.9,71.5,-8.4,71,-25.7,66.5C-43.1,62,-60.5,53.5,-68.5,39.6C-76.4,25.7,-74.9,6.4,-71.3,-12.3C-67.6,-30.9,-61.9,-48.9,-49.6,-61.3C-37.4,-73.7,-18.7,-80.6,-2.3,-77.8C14.1,-75.1,28.3,-62.8,40.9,-50.5Z"
+                            transform="translate(100 100)" />
+
+                        <!-- 3. Máscara e Efeito (adicionando uma máscara, pode ajustar conforme necessário) -->
+                        <mask id="mask1" mask-type="alpha">
+                            <rect width="200" height="200" fill="white" />
+                            <!-- Máscara retangular para fins de exemplo -->
+                        </mask>
+
+                        <!-- 4. Imagem Interna com Máscara -->
+                        <g mask="url(#mask1)">
+                            <image class="about__blob-img" x="-80" y="45" width="100" height="100"
+                                href="/assets/about__me.svg" />
+                        </g>
+                    </svg>
+
                 </div>
             </div>
         </section>
 
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
+            <!-- <h2 class="section-title">Projetcs</h2> -->
 
             <div class="skills__container bd-grid">
                 <div>
@@ -156,59 +195,29 @@
 
         <!--===== WORK =====-->
         <section class="work section" id="work">
-            <h2 class="section-title">Work</h2>
 
-            <div class="work__container bd-grid">
-                <a href="" class="work__img">
-                    <img src="work1.jpg" alt="">
-                </a>
-                <a href="" class="work__img">
-                    <img src="work2.jpg" alt="">
-                </a>
-                <a href="" class="work__img">
-                    <img src="work3.jpg" alt="">
-                </a>
-                <a href="" class="work__img">
-                    <img src="work4.jpg" alt="">
-                </a>
-                <a href="" class="work__img">
-                    <img src="work5.jpg" alt="">
-                </a>
-                <a href="" class="work__img">
-                    <img src="work6.jpg" alt="">
-                </a>
-            </div>
         </section>
 
         <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Send" class="contact__button button">
-                </form>
-            </div>
-        </section>
     </main>
 
     <!--===== FOOTER =====-->
     <footer class="footer">
         <p class="footer__title">Luiz Otávio</p>
         <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/luiz-otavio-bab9691b1/" target="_blank" class="footer__icon"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/tavio_faria/" target="_blank" class="footer__icon"> <i
+                    class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/tavinhoo" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
         </div>
-        <p class="footer__copy">&#169; CodeCraftedWeb. All rights reserved</p>
+        <p class="footer__copy">&#169; LuizOtávio. All rights reserved</p>
     </footer>
 
 
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/d6fa378589.js" crossorigin="anonymous"></script>
 
     <!--===== MAIN JS =====-->
     <script src="/script/script.js"></script>
